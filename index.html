@@ -3,8 +3,10 @@
     <head>
         <title>Marissa C</title>
         <meta name="viewpoint" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="icon" type="image/png" href="assets/images/marissa.jpg">
+        
 <!-- CSS LINK -->
         <link rel="stylesheet" href="assets/css/styles.css" media="screen">
     </head>
@@ -42,26 +44,17 @@
         <br>
 
 <!-- START OF EMAIL SUBSCRIPTION -->
-
-        <form action="action_page.html">
-            <div class="container">
-              <h2>Subscribe for Class Alerts!</h2>
-              <p>Casazza Workouts sends a bi-weekly schedule of all the latest and greatest happenings. Learn more about new classes, upcoming outdoor events, and much more!</p>
-            </div>
-          
-            <div class="container" style="background-color:white">
-              <input type="text" placeholder="Name" name="name" required>
-              <input type="text" placeholder="Email address" name="mail" required>
-              <label>
-                <input type="checkbox" checked="checked" name="subscribe"> Agree to Subscribe
-              </label>
-            </div>
-          
-            <div class="container">
-              <input type="submit" value="Subscribe">
-            </div>
-          </form>
-
+<div class="contact-form">  
+    <form id='contact-form' method="post" action="contact-form-handler.php">
+        <input name='name' type="text" class="form-control" placeholder="Your Name" required>
+        <br>
+        <input email='email' type="text" class="form-control" placeholder="Your Email" required>
+        <br>
+        <textarea name="message" class="form-control" placeholder="Message" row='4' required></textarea>
+        <br>
+        <input type='submit' class="form-control submit" value="Join the List!" >
+    </form>
+</div>
 
 <!-- START OF FOOTER -->
         <hr>
